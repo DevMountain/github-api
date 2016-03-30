@@ -1,0 +1,15 @@
+html {
+	background-color: #ccc;
+}
+
+input {
+	height: 20px;
+	width: 300px;
+	line-height: 20px;
+	font-size: 20px;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+}

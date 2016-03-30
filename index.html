@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="gitHub">
+<head>
+	<title>github API</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="mainC">
+	<h1>GitHub User Search</h1>
+
+	<input ng-model="searchText"><br>
+	<button ng-click="getUserData()">Search</button>
+
+	<br><br>
+	<br>
+	
+	<img ng-src="{{user.avatar_url}}"><br>
+	<h3>{{user.login}} </h3>
+	Company: {{user.company}}<br>
+	Email: {{user.email}} <br>
+	Repos: {{user.public_repos}}<br>
+	Followers: {{user.followers}}<br>
+	Following: {{user.following}}<br>
+
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<script type="text/javascript" src="js/service.js"></script>
+</body>
+</html>
